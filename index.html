@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
      <link rel="stylesheet" href="css/style.css">
     <title>Spotify Web</title>
   </head>
@@ -30,7 +31,11 @@
             <a href="#" class="menu-button">Nome Playlist</a>
           </div>
           <div class="box-bottom-sidebar">
-            
+            <a href="#" class="menu-button menu-button-bottom"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>Installa app</a>
+            <div class="line-green">
+            </div>
+            <a href="#" class="menu-button menu-button-bottom user-sidebar">
+              <div class="icon-user"><img src="img/profile.svg" alt="icon-user"></div>John Doe</a>
             </div>
           </div>
         </section>
@@ -42,7 +47,7 @@
               <a class="button-upgrade" href="#">EFFETTUA L'UPGRADE</a>
             </div>
             <div class="main-menu">
-
+              
             </div>
           </div>
         </header>
@@ -50,10 +55,46 @@
 
 
 
+      <section id="player-bottom">
+        <div class="info-player">
+            <img src="img/sinister.jpeg" alt="album cover">
+            <div class="brano">
+              <h5>Sinister</h5>
+              <p>Brano nome</p>
+            </div>
 
-    <div id="player-bottom">
-
-    </div>
+              <div class="icone-brano">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+              </div>
+            </div>
+            <div class="barraplayer">
+                <div class="icone-barraplayer">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div class="flex-playbar">
+                    <span>0:46</span>
+                    <div class="flex-playbar-full-empty">
+                        <div class="playbar-full"></div>
+                        <div class="playbar-empty"></div>
+                    </div>
+                    <span>3:29</span>
+                </div>
+            </div>
+            <div class="sound-icon">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="flex-volumebar">
+                  <div class="volumebar-full"></div>
+                  <div class="volumebar-empty"></div>
+                </div>
+            </div>
+        </section>
 
   </main>
  </body>
