@@ -88,7 +88,40 @@ main {
   margin-right: 10px;
 }
 
- .box-bottom-sidebar .bord-green{
+/* overlay */
+
+.overlay{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  font-size: 70px;
+
+
+
+}
+  .album:hover .overlay{
+   display: block;
+
+
+}
+
+.overlay .play-icon{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+
+}
+
+.box-photo{
+  position: relative;
+}
+ .box-bottom-sidebar .bord-grey{
   background-color: #6e6e6e;
   height: 1px;
   width: 210px;
@@ -124,6 +157,7 @@ main {
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 15px;
+
 }
 
 
@@ -136,6 +170,7 @@ main {
   justify-content: flex-end;
   align-items: center;
   position: fixed;
+  z-index: 2;
   top: 0;
   right: 0;
 }
@@ -189,7 +224,12 @@ main {
   flex-wrap: wrap
 }
 
-
+.circle img{
+  border-radius: 50%
+}
+.circle .overlay{
+  border-radius: 50%
+}
 #box-main .catalogo .box-lista .album{
   width: calc(100% / 6);
   padding: 10px;
@@ -208,11 +248,9 @@ main {
 #box-main .catalogo .box-lista .album .box-photo img{
   width: 100%;
   margin: 0 auto;
+
 }
-#box-main .catalogo .box-lista .album .artista{
-  border-radius: 50%;
-  overflow: hidden;
-}
+
 #player-bottom{
   display: flex;
   position: fixed;
@@ -266,7 +304,7 @@ main {
 
 .volumebar-full {
   width: 30px;
-  border: 2px solid green;
+  border: 2px solid #adff2f;
 }
 .volumebar-empty {
   width: 50px;
@@ -295,7 +333,7 @@ main {
 
 .playbar-full {
   width: 100px;
-  border: 2px solid green;
+  border: 2px solid #adff2f;
 }
 
 .playbar-empty {
@@ -319,4 +357,7 @@ main {
 .icone-barraplayer i{
   margin-left: 15px;
 
+}
+.layout-xs{
+  display: none;
 }
