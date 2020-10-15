@@ -9,103 +9,153 @@
   </head>
   <body>
     <main>
-      <section>
-        <div id="box-sidebar">
-          <div class="top-sidebar">
-            <div class="logo-spoty">
-              <img src="img/logo.svg" alt="Logo Spotify">
-            </div>
-            <div class="menu-sidebar">
-              <a href="#" class="menu-button button-active"><img src="img/home.svg" alt="icon-home">Home</a>
-              <a href="#" class="menu-button"><img src="img/search.svg" alt="icon-search">Cerca</a>
-              <a href="#" class="menu-button"><img src="img/libreria.svg" alt="icon-library">La tua libreria</a>
-            </div>
-            <div class="playlist">
-              <h4>PLAYLIST</h4>
-              <a href="#" class="menu-button"><div class="my-playlist"><i class="fa fa-plus" aria-hidden="true"></i></div>Crea Playlist</a>
-              <a href="#" class="menu-button">Nome Playlist</a>
-              <a href="#" class="menu-button">Nome Playlist</a>
-              <a href="#" class="menu-button">Nome Playlist</a>
-              <a href="#" class="menu-button">Nome Playlist</a>
-              <a href="#" class="menu-button">Nome Playlist</a>
-              <a href="#" class="menu-button">Nome Playlist</a>
-              <a href="#" class="menu-button">Nome Playlist</a>
-            </div>
-            <div class="box-bottom-sidebar">
-              <a href="#" class="menu-button menu-button-bottom"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>Installa app</a>
-              <div class="line-green">
-              </div>
-              <a href="#" class="menu-button menu-button-bottom user-sidebar">
-                <div class="icon-user"><img src="img/profile.svg" alt="icon-user"></div>John Doe</a>
-              </div>
-            </div>
 
+      <div id="box-sidebar">
+        <div class="top-sidebar">
+          <div class="logo-spoty">
+            <img src="img/logo.svg" alt="Logo Spotify">
           </div>
-        </section>
-        <!-- fine sidebar -->
-
-        <header>
-          <div id="main-content">
-            <div class="box-upgrade">
-              <a class="button-upgrade" href="#">EFFETTUA L'UPGRADE</a>
+          <div class="menu-sidebar">
+            <a href="#" class="menu-button button-active"><img src="img/home.svg" alt="icon-home">Home</a>
+            <a href="#" class="menu-button"><img src="img/search.svg" alt="icon-search">Cerca</a>
+            <a href="#" class="menu-button"><img src="img/libreria.svg" alt="icon-library">La tua libreria</a>
+          </div>
+          <div class="playlist">
+            <h4>PLAYLIST</h4>
+            <a href="#" class="menu-button"><div class="name-playlist"><i class="fa fa-plus" aria-hidden="true"></i></div>Crea Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+            <a href="#" class="menu-button">Nome Playlist</a>
+          </div>
+        </div>
+        <div class="box-bottom-sidebar">
+            <a href="#" class="menu-button menu-button-bottom"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>Installa app</a>
+            <div class="bord-green">
             </div>
-            <div class="main-menu">
-              <ul>
-                <li><a class="button-main-menu" href="#">IN EVIDENZA</a><div class="line-main-menu"></div></li>
-                <li><a class="button-main-menu" href="#">PODCAST</a></li>
-                <li><a class="button-main-menu" href="#">CLASSIFICHE</a></li>
-                <li><a class="button-main-menu" href="#">GENERI E MOOD</a></li>
-                <li><a class="button-main-menu" href="#">NUOVE USCITE</a></li>
-                <li><a class="button-main-menu" href="#">SCOPRI</a></li>
-              </ul>
+            <a href="#" class="menu-button menu-button-bottom user-sidebar">
+              <div class="user-icon"><img src="img/profile.svg" alt="icon-user"></div>John Doe</a>
+        </div>
+      </div>
+      <!-- side bar fine, controllare responsive-->
+
+      <div id="box-main"><!-- main content -->
+        <div class="box-upgrade">
+          <a class="button-upgrade" href="#">EFFETTUA L'UPGRADE</a>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li><a class="button-main-menu" href="#">IN EVIDENZA</a><div class="border-main-nav"></div></li>
+            <li><a class="button-main-menu" href="#">PODCAST</a></li>
+            <li><a class="button-main-menu" href="#">CLASSIFICHE</a></li>
+            <li><a class="button-main-menu" href="#">GENERI E MOOD</a></li>
+            <li><a class="button-main-menu" href="#">NUOVE USCITE</a></li>
+            <li><a class="button-main-menu" href="#">SCOPRI</a></li>
+          </ul>
+        </div>
+        <div class="catalogo">
+          <h2 class="title-playlist">Recently Played</h2>
+          <div class="box-lista">
+            <div class="album">
+              <div class="box-photo">
+                <img src="img/metal_lifting.jpg" alt="album photo">
+              </div>
+              <h5 class="title">Heavy Metal</h5>
+              <h6 class="artista">Subtitle</h6>
+            </div>
+            <div class="album">
+              <div class="box-photo">
+                <img src="img/stranger.jpeg" alt="album stranger things">
+              </div>
+              <h5 class="title">Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</h5>
+              <h6 class="artista">Kyle Dixon & Michael Stein</h6>
+            </div>
+            <div class="album">
+              <div class="box-photo">
+                <img src="img/aquietplace.jpeg" alt="album a quiet place">
+              </div>
+              <h5 class="title">A quiet place</h5>
+              <h6 class="artista">Subtitle</h6>
+            </div>
+            <div class="album">
+              <div class="box-photo">
+                <img src="img/split.jpeg" alt="album split">
+              </div>
+              <h5 class="title">Split</h5>
+              <h6 class="artista">Subtitle</h6>
+            </div>
+            <div class="album">
+              <div class="box-photo">
+                <img src="img/cure.jpeg" alt="album cure">
+              </div>
+              <h5 class="title">A cure for wellness</h5>
+              <h6 class="artista">Subtitle</h6>
+            </div>
+            <div class="album">
+              <div class="box-photo">
+                <img src="img/sinister.jpeg" alt="album siniste">
+              </div>
+              <h5 class="title">Sinister</h5>
+              <h6 class="artista">Subtitle</h6>
             </div>
           </div>
-        </header>
-
-
-
+        </div>
+        
 
       <section id="player-bottom">
         <div class="info-player">
-            <img src="img/sinister.jpeg" alt="album cover">
-            <div class="brano">
-              <h5>Sinister</h5>
-              <p>Brano nome</p>
-            </div>
+          <img src="img/sinister.jpeg" alt="album cover">
+          <div class="brano">
+            <h5>Sinister</h5>
+            <p>Brano nome</p>
+          </div>
 
-              <div class="icone-brano">
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
-              </div>
+          <div class="icone-brano">
+            <i class="far fa-heart"></i>
+            <i class="far fa-folder"></i>
+          </div>
+        </div>
+        <div class="barraplayer">
+          <div class="icone-barraplayer">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+          </div>
+          <div class="flex-playbar">
+            <span>0:46</span>
+            <div class="flex-playbar-full-empty">
+              <div class="playbar-full"></div>
+              <div class="playbar-empty"></div>
             </div>
-            <div class="barraplayer">
-                <div class="icone-barraplayer">
-                    <i class="fas fa-random"></i>
-                    <i class="fas fa-step-backward"></i>
-                    <i class="far fa-play-circle"></i>
-                    <i class="fas fa-step-forward"></i>
-                    <i class="fas fa-redo-alt"></i>
-                </div>
-                <div class="flex-playbar">
-                    <span>0:46</span>
-                    <div class="flex-playbar-full-empty">
-                        <div class="playbar-full"></div>
-                        <div class="playbar-empty"></div>
-                    </div>
-                    <span>3:29</span>
-                </div>
-            </div>
-            <div class="sound-icon">
-                <i class="fas fa-list"></i>
-                <i class="fas fa-desktop"></i>
-                <i class="fas fa-volume-up"></i>
-                <div class="flex-volumebar">
-                  <div class="volumebar-full"></div>
-                  <div class="volumebar-empty"></div>
-                </div>
-            </div>
-        </section>
+            <span>3:29</span>
+          </div>
+        </div>
+        <div class="sound-icon">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <div class="flex-volumebar">
+            <div class="volumebar-full"></div>
+            <div class="volumebar-empty"></div>
+          </div>
+        </div>
+      </section>
 
-  </main>
- </body>
+    </main>
+  </body>
+
+
+
+
+
+
+
+
+
+
 </html>

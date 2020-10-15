@@ -1,4 +1,5 @@
-/* reset */
+
+
 * {
   padding: 0;
   margin: 0;
@@ -10,29 +11,21 @@ body{
   font-family: 'Montserrat', sans-serif;
 
 }
-main{
-  width: 100%;
-  height: 100vh;
-  position:relative;
-
-
+main {
+  position: relative;
 }
-
-
-
-
-/*sidebar */
+/* sezione sidebar */
 #box-sidebar{
   width: 250px;
   height: calc(100vh - 80px);
   background-color: #000000;
   position: relative;
   overflow-y: hidden;
-
-
 }
-
- #box-sidebar .logo-spoty{
+#box-sidebar .top-sidebar{
+  min-height: 400px;
+}
+#box-sidebar .logo-spoty{
   padding: 20px 80px 20px 20px;
 }
 
@@ -56,15 +49,20 @@ main{
 #box-sidebar .menu-button:hover{
   color: white;
 }
-#box-sidebar .menu-button:hover .playlist{
+#box-sidebar .menu-button:hover .name-playlist{
   background-color: white;
 }
+
 #box-sidebar .menu-sidebar .button-active{
   color: white;
   border-left: 3px solid #adff2f;
   padding-left: 17px;
 }
-#box-sidebar .playlist .my-playlist{
+#box-sidebar .playlist{
+  min-height: 300px;
+  overflow-y: hidden;
+}
+#box-sidebar .playlist .name-playlist{
   display: inline-block;
   height: 35px;
   width: 35px;
@@ -83,21 +81,22 @@ main{
   bottom: 0;
   left: 0;
   width: 100%;
+  background-color: #000000;
 }
 #box-sidebar .box-bottom-sidebar i{
   margin-right: 10px;
 }
 
-  .line-green{
+#box-sidebar .box-bottom-sidebar .bord-green{
   background-color: #6e6e6e;
   height: 1px;
-  width: 200px;
+  width: 210px;
   margin: 0 20px;
 }
- #box-sidebar .box-bottom-sidebar .user-sidebar{
+#box-sidebar .box-bottom-sidebar .user-sidebar{
   color:white;
 }
- #box-sidebar .box-bottom-sidebar .user-sidebar .icon-user{
+#box-sidebar .box-bottom-sidebar .user-sidebar .user-icon{
   display: inline-block;
   height: 30px;
   width: 30px;
@@ -107,38 +106,40 @@ main{
   overflow: hidden;
   margin-right: 10px;
 }
-#box-sidebar .box-bottom-sidebar .user-sidebar .icon-user img{
+#box-sidebar .box-bottom-sidebar .user-sidebar .user-icon img{
   width: 100%;
 }
 
 
 
-/*main content */
-#main-content{
+/* main  */
+#box-main{
   position: absolute;
   top:0;
   right:0;
-  width: calc(100vw - 250px);
+  width: calc(100% - 250px);
   height: calc(100vh - 80px);
-  background-color: #0c0f14;
+  background-color: #141922;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 15px;
 }
 
 
 
-/* box upgrade */
-
-#main-content .box-upgrade{
-  width: calc(100vw - 250px);
+#box-main .box-upgrade{
+  width: calc(100% - 250px);
   height: 80px;
-  background-color: #070a0f;
+  background-color: #080b12;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: fixed;
   top: 0;
+  right: 0;
 }
 
-#main-content .box-upgrade .button-upgrade{
+#box-main .box-upgrade .button-upgrade{
   text-decoration: none;
   color: white;
   border: 1px solid white;
@@ -150,31 +151,67 @@ main{
 }
 
 
- #main-content .main-menu{
+
+#box-main .main-menu{
   margin-top: 80px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:space-around;
+  text-align: center;
 }
-#main-content .main-menu li{
+#box-main .main-menu li{
   display: inline-block;
   margin: 10px;
   padding-top: 10px;
 }
-#main-content .main-menu li .button-main-menu{
+#box-main .main-menu li .button-main-menu{
   text-decoration: none;
   color: #6e6e6e;
 }
-#main-content .main-menu li .line-main-menu{
+#box-main .main-menu li .border-main-nav{
   background-color: #adff2f;
   height: 2px;
-  width: 20%;
+  width: 2em;
   margin: auto;
 }
 
 
-/* player bottom */
+/* album */
+
+#box-main .catalogo .title-playlist{
+  margin: 10px 0;
+}
+
+#box-main .catalogo .box-lista{
+  display: flex;
+  flex-wrap: wrap
+}
+
+
+#box-main .catalogo .box-lista .album{
+  width: calc(100% / 6);
+  padding: 10px;
+  text-align: center;
+}
+
+#box-main .catalogo .box-lista .album .title{
+  margin: 5px 0;
+}
+
+#box-main .catalogo h6 {
+  color: #6e6e6e;
+  margin: 5px 0;
+}
+
+#box-main .catalogo .box-lista .album .box-photo img{
+  width: 100%;
+  margin: 0 auto;
+}
+#box-main .catalogo .box-lista .album .artista{
+  border-radius: 50%;
+  overflow: hidden;
+}
 #player-bottom{
   display: flex;
   position: fixed;
