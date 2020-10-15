@@ -19,8 +19,11 @@ main {
   width: 250px;
   height: calc(100vh - 80px);
   background-color: #000000;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   overflow-y: hidden;
+
 }
 #box-sidebar .top-sidebar{
   min-height: 400px;
@@ -49,20 +52,20 @@ main {
 #box-sidebar .menu-button:hover{
   color: white;
 }
-#box-sidebar .menu-button:hover .name-playlist{
+ .menu-button:hover .name-playlist{
   background-color: white;
 }
 
-#box-sidebar .menu-sidebar .button-active{
+.menu-sidebar .button-active{
   color: white;
   border-left: 3px solid #adff2f;
   padding-left: 17px;
 }
-#box-sidebar .playlist{
+ .playlist{
   min-height: 300px;
   overflow-y: hidden;
 }
-#box-sidebar .playlist .name-playlist{
+.playlist .name-playlist{
   display: inline-block;
   height: 35px;
   width: 35px;
@@ -72,22 +75,20 @@ main {
   text-align: center;
   margin-right: 10px;
 }
-#box-sidebar .playlist h4{
+.playlist h4{
   padding-left: 20px;
   line-height: 35px;
 }
-#box-sidebar .box-bottom-sidebar{
-  position: absolute;
-  bottom: 0;
-  left: 0;
+ .box-bottom-sidebar{
+
   width: 100%;
   background-color: #000000;
 }
-#box-sidebar .box-bottom-sidebar i{
+ .box-bottom-sidebar i{
   margin-right: 10px;
 }
 
-#box-sidebar .box-bottom-sidebar .bord-green{
+ .box-bottom-sidebar .bord-green{
   background-color: #6e6e6e;
   height: 1px;
   width: 210px;
